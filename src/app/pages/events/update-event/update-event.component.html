@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="contenedor   ">
+
+  <div class="row">
+    <div class="col  col-image">
+      <img class="w-75 h-75" src="../../../../assets/images/event.png">
+    </div>
+
+    <div class="col col-form   ">
+
+      <div class="input-groups">
+        <input required="" type="text" name="text" autocomplete="off" class="input">
+        <label class="user-label">Titulo</label>
+      </div>
+
+      <div class="input-groups">
+        <textarea name="text" autocomplete="off" class="input  text-area"></textarea>
+        <label class="user-label">Descripción</label>
+      </div>
+
+      <div class="input-groups input_date " >
+        <input name="text" id="input_date"  type="date"  #input_date   autocomplete="off" class="input"  placeholder="Selecciona una fecha">
+        <label class="user-label">Fecha</label>
+        <label type="button" for="input_date" class="icon_date"  (click)="openDateInput()"  >
+          <img  src="../../../../assets/images/date.png" alt="Abrir selector de fecha">
+        </label>
+      </div>
+
+
+      <div class="input-groups">
+        <input required="" type="text" name="text" autocomplete="off" class="input">
+        <label class="user-label">Enlace</label>
+      </div>
+
+      <div class="input-groups">
+        <select required="" name="text" autocomplete="off" class="input">
+          <option>Compra de boleteria</option>
+        </select>
+        <label class="user-label">Tipo de evento</label>
+      </div>
+
+
+      <button class="btn btn_save"> Guardar</button>
+
+    </div>
+  </div>
+
+</div>

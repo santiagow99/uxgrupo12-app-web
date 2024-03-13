@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+.contenedor {
+  padding-top: 80px;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.row {
+  width: 80%;
+  padding: 20px;
+}
+
+.col-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.col-image img {
+  width: 339px;
+  height: 339px;
+  border-radius: 45px;
+
+
+}
+
+.col-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.input-groups {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+}
+
+.input {
+  width: 312px;
+  height: 56px;
+  border: solid 1.5px var(--primary-color);
+  border-radius: 5px;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-area {
+  width: 100% !important;
+  height: 127px;
+  resize: none;
+}
+
+.input_date {
+  width: 312px;
+
+}
+
+.input_date .icon_date {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  z-index: 999;
+
+
+}
+
+.user-label {
+  position: absolute;
+  transform: translateY(-50%) scale(0.8);
+  left: 15px;
+  color: var(--primary-color);
+  background: white;
+  font-weight: normal;
+  pointer-events: none;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid var(--primary-color);
+}
+
+.input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background: white;
+  padding: 0 .2em;
+}
+
+.btn_save {
+  width: 107px;
+  padding: 4px;
+  background: var(--primary-color);
+  border-radius: 100px;
+  color: white;
+}
