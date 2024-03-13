@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container mx-auto  " style="margin-top: 80px">
+
+
+  <div class="search">
+    <div class="search-input">
+      <input type="text" name="text" placeholder="Buscar Evento" class="input">
+      <img class="icon-search" src="../../../assets/images/search.png" alt="">
+    </div>
+
+  </div>
+
+
+  <div class="content ">
+
+    <div class="card flex flex-row justify-content-between border-0 border-bottom align-items-center" *ngFor="let card of items">
+      <div class="card_head">
+        <div>
+          <img [src]="card.image" alt="">
+        </div>
+        <p>{{card.name}}</p>
+      </div>
+      <div class="buttons">
+        <a class="btn fw-semibold" routerLink="/evento/{{card.name}}">Ver</a>
+        <a class="btn fw-semibold" routerLink="/evento/edit/{{card.name}}">Editar</a>
+        <a class="btn fw-semibold">Eliminar</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="floating_created">
+    <h3>Publicar evento </h3>
+    <button><img src="../../../assets/images/icon.png" alt=""></button>
+  </div>
+</div>
