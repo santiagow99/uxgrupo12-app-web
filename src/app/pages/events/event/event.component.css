@@ -1,0 +1,30 @@
+
+.event_title{
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.col-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.col-image img {
+  width: 339px;
+  height: 339px;
+  border-radius: 45px;
+
+
+}
+.text-terciary{
+  color: var(--tertiary-color);
+}
+.description{
+  display: flex;
+  background: var(--secondary-color);
+  border-radius: 25px;
+  padding: 2px;
+}
